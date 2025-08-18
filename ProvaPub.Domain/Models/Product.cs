@@ -1,4 +1,4 @@
-﻿namespace ProvaPub.Models
+﻿namespace ProvaPub.Domain.Models
 {
 	public class Product
 	{

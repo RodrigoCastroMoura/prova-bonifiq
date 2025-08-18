@@ -1,10 +1,11 @@
-﻿using ProvaPub.Models;
-using ProvaPub.Repository;
+﻿using ProvaPub.Domain.Models;
+using ProvaPub.Domain.Services;
+using ProvaPub.Infrastructure.Repository;
 
-namespace ProvaPub.Services
+namespace ProvaPub.App.Services
 {
-	public class OrderService
-	{
+	public class OrderService : IOrderService
+    {
         TestDbContext _ctx;
 
         public OrderService(TestDbContext ctx)
