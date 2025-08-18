@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaPub.App", "..\ProvaPub
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaPub.Infrastructure", "..\ProvaPub.Infrastructure\ProvaPub.Infrastructure.csproj", "{A63894A6-5C21-F1C3-76B7-04915D45BDF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaPub.Test", "..\ProvaPub.Test\ProvaPub.Test.csproj", "{3A952DCF-10E8-447A-930D-AA970B1AA85F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A63894A6-5C21-F1C3-76B7-04915D45BDF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A63894A6-5C21-F1C3-76B7-04915D45BDF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A63894A6-5C21-F1C3-76B7-04915D45BDF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A952DCF-10E8-447A-930D-AA970B1AA85F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A952DCF-10E8-447A-930D-AA970B1AA85F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A952DCF-10E8-447A-930D-AA970B1AA85F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A952DCF-10E8-447A-930D-AA970B1AA85F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

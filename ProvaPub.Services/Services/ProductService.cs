@@ -1,19 +1,21 @@
-﻿using ProvaPub.Domain.Models;
+﻿using ProvaPub.Domain.Interfaces.Unit;
+using ProvaPub.Domain.Models;
 using ProvaPub.Domain.Services;
-using ProvaPub.Infrastructure.Repository;
-
 
 namespace ProvaPub.App.Services
 {
-    public class ProductService : BaseService<Product>, IProductService
+    public class ProductService : IProductService
     {
-        public ProductService(TestDbContext ctx) : base(ctx)
+        private readonly IUnitOfWork _unitOfWork;
+
+        public ProductService(IUnitOfWork unitOfWork)
         {
+            _unitOfWork = unitOfWork;
         }
 
         public ProductList ListProducts(int page)
         {
-            var pagedResult = ListPaged(page);
+            var pagedResult = _unitOfWork.Products.GetPaged(page);
 
             return new ProductList
             {

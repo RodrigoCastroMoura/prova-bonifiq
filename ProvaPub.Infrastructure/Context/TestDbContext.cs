@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using ProvaPub.Domain.Models;
 
-namespace ProvaPub.Infrastructure.Repository
+namespace ProvaPub.Infrastructure.Context
 {
 
 	public class TestDbContext : DbContext
